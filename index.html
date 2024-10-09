@@ -8,61 +8,53 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/header.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Nirva</title>
 </head>
 
 <body>
-
-  <!-- Barra de navegacao da pagina-->
   <header>
     <nav id="navbar">
-      <img src="/Img/buda caio.pn" alt="Buda">
+      <img src="/Img/buda caio.png" alt="buda" id="nav_logo"> Nirva</img>
 
       <ul id="nav_list">
-        <li class="nav-item">
-          <a href="#home">Inicio</a>
+        <li class="nav-item active">
+          <a href="#home">Início</a>
         </li>
-        <li class="nav item">
+        <li class="nav-item">
           <a href="#abbout">Sobre</a>
         </li>
         <li class="nav-item">
-          <a href="services">Serviços</a>
+          <a href="#services">Serviços</a>
         </li>
-        <li class="nav-item">
-          <a href="#contact">Contato</a>
-        </li>
-
       </ul>
 
-
-      <!-- botao do site -->
       <button class="btn-default">
         Faça um orçamento
       </button>
 
-      <!--botao mobile-->
       <button id="mobile_btn">
         <i class="fa-solid fa-bars"></i>
       </button>
-
     </nav>
 
-    <!-- Barra de navegacao mobile-->
     <div id="mobile_menu">
-      <ul id="mobile_nav_list"></ul>
-      <li class="nav-item">
-        <a href="#home">Inicio</a>
-      </li>
-      <li class="nav item">
-        <a href="#abbout">Sobre</a>
-      </li>
-      <li class="nav-item">
-        <a href="services">Serviços</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact">Contato</a>
-      </li>
+      <ul id="mobile_nav_list">
+        <li class="nav-item">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#abbout">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services">Serviços</a>
+        </li>
       </ul>
 
       <button class="btn-default">
@@ -70,6 +62,8 @@
       </button>
     </div>
   </header>
+
+  <script src="src/javascript/script.js"></script>
 </body>
 
 </html>
