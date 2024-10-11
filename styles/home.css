@@ -1,0 +1,69 @@
+#home {
+  background-image: linear-gradient(rgba(0, 0, 1, 0.575), rgba(0, 0, 0, 0.37)),
+    url(/Img/Familia\ se\ mudando.jpg);
+  min-height: calc(100vh - 91px);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+  display: flex;
+}
+
+#cta {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
+}
+
+#cta .tittle {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+#cta .tittle span {
+  color: #0c8946;
+}
+
+#cta .description,
+p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#phone_button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 14px;
+  font-weight: 500;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+#phone_button button {
+  box-shadow: none;
+}
+
+#banner img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
