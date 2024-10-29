@@ -1,0 +1,65 @@
+#differences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.assembly-image {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+
+#assemblys {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.assembly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 70px;
+  gap: 5px;
+  width: 25%;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.difference-description {
+  color: #434343;
+  text-align: justify;
+}
+
+.difference-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #434343;
+  text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+  #assemblys {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .assembly {
+    width: calc(50% - 12px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .assembly {
+    width: calc(100% - 12px);
+  }
+
+  #difference .diferrente-title {
+    text-align: center;
+  }
+}

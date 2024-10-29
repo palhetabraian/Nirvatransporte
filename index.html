@@ -1,172 +1,223 @@
 <!DOCTYPE html>
 <html lang="Pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/differences.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/header.css">
-  <link rel="stylesheet" href="/styles/home.css">
-  <link rel="stylesheet" href="/styles/menu.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Nirva</title>
+  </head>
 
+  <body>
+    <header>
+      <nav id="navbar">
+        <img src="/Img/buda caio.png" alt="buda" id="nav_logo" />
 
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#abbout">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services">Serviços</a>
+          </li>
+        </ul>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>Nirva</title>
-</head>
+        <button class="btn-default">Faça um orçamento</button>
 
-<body>
-  <header>
-    <nav id="navbar">
-      <img src="/Img/buda caio.png" alt="buda" id="nav_logo"></img>
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
 
-      <ul id="nav_list">
-        <li class="nav-item active">
-          <a href="#home">Início</a>
-        </li>
-        <li class="nav-item">
-          <a href="#abbout">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a href="#services">Serviços</a>
-        </li>
-      </ul>
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#abbout">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services">Serviços</a>
+          </li>
+        </ul>
 
-      <button class="btn-default">
-        Faça um orçamento
-      </button>
-
-      <button id="mobile_btn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
-
-    <div id="mobile_menu">
-      <ul id="mobile_nav_list">
-        <li class="nav-item">
-          <a href="#home">Início</a>
-        </li>
-        <li class="nav-item">
-          <a href="#abbout">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a href="#services">Serviços</a>
-        </li>
-      </ul>
-
-      <button class="btn-default">
-        Faça um orçamento
-      </button>
-    </div>
-  </header>
-
-  <main id="content">
-    <div class="shape"></div>
-    <section id="home">
-      <div id="cta">
-        <h1 class="tittle">
-          A forma mais prática de <span>você</span> realizar sua mudança!
-        </h1>
-
-        <p>Com a Nirva, sua mudança é rápida, segura e sem complicações. Nossa equipe cuida de tudo: embalagem,
-          transporte e montagem, garantindo que seus pertences cheguem ao destino com total segurança.
-          Seja uma mudança pequena ou grande, estamos prontos para transformar esse processo em uma experiência
-          tranquila e sem estresse.</p>
-
-        <div id="cta_buttons">
-          <a href="#" class="btn-default">
-            Ver Serviços
-          </a>
-
-          <a href="tel:+5555555555" id="phone_button">
-            <button class="btn-default">
-              <i class="fa-solid fa-phone">
-              </i>
-            </button>
-            (51) 92342-32432
-          </a>
-        </div>
-
-        <div class="social-media-buttons">
-          <a href="wpplink">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-
-          <a href="wpplink">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a href="wpplink">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </div>
+        <button class="btn-default">Faça um orçamento</button>
       </div>
+    </header>
 
+    <main id="content">
+      <section id="home">
+        <div id="cta">
+          <h1 class="tittle">
+            A forma mais prática de <span>você</span> realizar sua mudança!
+          </h1>
 
-    </section>
+          <p>
+            Com a Nirva, sua mudança é rápida, segura e sem complicações. Nossa
+            equipe cuida de tudo: embalagem, transporte e montagem, garantindo
+            que seus pertences cheguem ao destino com total segurança. Seja uma
+            mudança pequena ou grande, estamos prontos para transformar esse
+            processo em uma experiência tranquila e sem estresse.
+          </p>
 
-    <section id="menu">
-      <h2 class="section-title">
-        Serviços
-      </h2>
-      <h3 class="section-subtitle">A mudança deve ser algo fácil para você</h3>
+          <div id="cta_buttons">
+            <a href="#" class="btn-default"> Ver Serviços </a>
 
-      <div id="dishes">
-        <div class="dish">
-          <img src="/Img/PEQUENOS FRETES.jpeg " width="350" class="dish-image" alt="">
+            <a href="tel:+5555555555" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"> </i>
+              </button>
+              (51) 92342-32432
+            </a>
+          </div>
 
-          <h3 class="dish-title">
-            Pequenos Fretes com segurança
-          </h3>
+          <div class="social-media-buttons">
+            <a href="wpplink">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-          <span class="dish-description">Precisa transportar pequenos volumes? Oferecemos serviços de fretes rápidos e
-            eficientes para cargas menores, garantindo agilidade e segurança na entrega. Atendemos clientes que buscam
-            soluções.</span>
+            <a href="wpplink">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
 
-
+            <a href="wpplink">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div class="dish">
-          <img src="/Img/mudancas residenciais.jpg" width="350" class="dish-image" alt="">
+      <section id="menu">
+        <h2 class="section-title">Serviços</h2>
+        <h3 class="section-subtitle">
+          A mudança deve ser algo fácil para você
+        </h3>
 
-          <h3 class="dish-title">
-            Mudanças residenciais
-          </h3>
+        <div id="dishes">
+          <div class="dish">
+            <img
+              src="/Img/PEQUENOS FRETES.jpeg "
+              width="350"
+              class="dish-image"
+              alt=""
+            />
 
-          <span class="dish-description">Sua Mudança Residencial, Nossa Prioridade
-            "Mudar de casa não precisa ser um desafio. Nossa equipe especializada em mudanças residenciais está pronta
-            para cuidar de tudo, do transporte dos móveis à organização, oferecendo um serviço ágil, seguro
-            e sob medida para você."</span>
+            <h3 class="dish-title">Pequenos Fretes com segurança</h3>
 
+            <span class="dish-description"
+              >Precisa transportar pequenos volumes? Oferecemos serviços de
+              fretes rápidos e eficientes para cargas menores, garantindo
+              agilidade e segurança na entrega. Atendemos clientes que buscam
+              soluções.</span
+            >
+          </div>
 
+          <div class="dish">
+            <img
+              src="/Img/mudancas residenciais.jpg"
+              width="350"
+              class="dish-image"
+              alt=""
+            />
+
+            <h3 class="dish-title">Mudanças residenciais</h3>
+
+            <span class="dish-description"
+              >Sua Mudança Residencial, Nossa Prioridade "Mudar de casa não
+              precisa ser um desafio. Nossa equipe especializada em mudanças
+              residenciais está pronta para cuidar de tudo, do transporte dos
+              móveis à organização, oferecendo um serviço ágil, seguro e sob
+              medida para você."</span
+            >
+          </div>
+
+          <div class="dish">
+            <img
+              src="/Img/Caixas para mudanca.png"
+              width="350"
+              class="dish-image"
+              alt=""
+            />
+
+            <h3 class="dish-title">Mudanças Comerciais</h3>
+
+            <span class="dish-description"
+              >Sabemos que uma mudança comercial precisa ser rápida e bem
+              planejada para minimizar impactos no seu negócio. Oferecemos
+              soluções para mudanças empresariais, garantindo que todos os seus
+              equipamentos, móveis e materiais cheguem ao novo local com
+              segurança e no prazo combinado.</span
+            >
+          </div>
         </div>
+      </section>
 
-        <div class="dish">
+      <section id="differences">
+        <h2 class="differences-title">Diferenciais</h2>
 
-          <img src="/Img/Caixas para mudanca.png" width="350" class="dish-image" alt="">
+        <div id="assemblys">
+          <div class="assembly">
+            <img
+              src="/Img/Montagem e desmontagem.jpg"
+              width="400"
+              class="assembly-image"
+              alt="Montador de mudancas"
+            />
 
-          <h3 class="dish-title">
-            Mudanças Comerciais
-          </h3>
+            <h3 class="difference-title">
+              <span>Montagem</span> e <span>Desmontagem</span>
+            </h3>
 
-          <span class="dish-description">Sabemos que uma mudança comercial precisa ser rápida e bem planejada para
-            minimizar impactos no seu negócio. Oferecemos soluções para mudanças empresariais, garantindo que todos os
-            seus equipamentos, móveis e materiais cheguem ao novo local com segurança e no prazo combinado.</span>
+            <span class="difference-description"
+              >Deixe de lado o estresse de montar e desmontar seus móveis. A
+              Nirva cuida de tudo com atenção e carinho para você</span
+            >
+          </div>
 
+          <div class="assembly">
+            <img
+              src="/Img/embalagem.jpg"
+              width="800"
+              class="assembly-image"
+              alt="Montador de mudancas"
+            />
 
+            <h3 class="difference-title">Serviço de <span>embalagem</span></h3>
+
+            <span class="difference-description"
+              >Cuidar do seu patrimônio é importante. A Nirva garante sua
+              mudança com embalagens especiais e de qualidade..</span
+            >
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
-
-  <script src="src/javascript/script.js"></script>
-</body>
-
+    <script src="src/javascript/script.js"></script>
+  </body>
 </html>
