@@ -1,6 +1,10 @@
 header {
   width: 100%;
-  padding: 29px 8%;
+  padding: 28px 8%;
+  position: sticky;
+  top: 0;
+  background-color: #f7fcf8;
+  z-index: 3;
 }
 
 #navbar {
@@ -11,7 +15,7 @@ header {
 }
 
 #nav_logo {
-  width: 200px;
+  width: 100px;
 }
 
 #nav_list {
