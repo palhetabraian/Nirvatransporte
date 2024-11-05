@@ -5,6 +5,15 @@
 @import url("differences.css");
 @import url("footer.css");
 
+:root {
+  --color-primary-1: #f7fcf8;
+  --color-primary-2: #2ec077;
+  --color-primary-3: #0c8946;
+
+  --color-neutral-0: #ffff;
+  --color-neutral-1: #1d1d1d;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -25,7 +34,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0c8946;
+  background-color: var(--color-primary-3);
   border-radius: 12px;
   padding: 10px 14px;
   font-weight: 600;
@@ -35,7 +44,7 @@ section {
 }
 
 .btn-default:hover {
-  background-color: #2ec077;
+  background-color: var(--color-primary-2);
 }
 
 .social-media-buttons {
@@ -49,11 +58,11 @@ section {
   justify-content: center;
   width: 45px;
   height: 40px;
-  background-color: #ffff;
+  background-color: var(--color-neutral-0);
   font-size: 1.25rem;
   border-radius: 10px;
   text-decoration: none;
-  color: #1d1d1d;
+  color: var(--color-neutral-1);
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,17 +71,17 @@ section {
 }
 
 .differences-title {
-  color: #ffffff;
+  color: var(--color-neutral-0) ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0c8946;
+  background-color: var(--color-primary-3);
   font-size: 3rem;
   width: 119%;
 }
 
 .section-title {
-  color: #0c8946;
+  color: var(--color-primary-3);
   font-size: 3.563rem;
 }
 

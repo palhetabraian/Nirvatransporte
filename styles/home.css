@@ -20,17 +20,17 @@
 
 #cta .tittle {
   font-size: 4rem;
-  color: #ffffff;
+  color: var(--color-neutral-0) ff;
 }
 
 #cta .tittle span {
-  color: #0c8946;
+  color: var(--color-primary-3);
 }
 
 #cta .description,
 p {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--color-neutral-0) ff;
 }
 
 #cta_buttons {
@@ -47,7 +47,7 @@ p {
   display: flex;
   gap: 8px;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--color-neutral-0) ff;
   padding: 8px 14px;
   font-weight: 500;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
